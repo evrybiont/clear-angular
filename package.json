@@ -14,6 +14,7 @@
     "grunt-generate": "0.3.2",
     "grunt-cli": "0.1.13",
     "grunt-contrib-uglify": "^1.0.1",
+    "express": "^4.13.4",
     "body-parser": "^1.13.3",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
@@ -29,6 +30,7 @@
   "dependencies": {
     "grunt": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
+    "express": "^4.13.4",
     "body-parser": "^1.13.3",
     "bower": "^1.7.9"
   },
