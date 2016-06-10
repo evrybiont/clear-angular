@@ -35,7 +35,7 @@
     "bower": "^1.7.9"
   },
   "scripts": {
-    "postinstall": "bower install && grunt",
+    "postinstall": "sudo bower install --allow-root && grunt",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "prestart": "npm install",
