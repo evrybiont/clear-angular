@@ -35,7 +35,6 @@
     "bower": "^1.7.9"
   },
   "scripts": {
-    "postinstall": "bower install && grunt",
-    "start": "node server.js"
+    "postinstall": "bower install && grunt build"
   }
 }
