@@ -27,8 +27,6 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "nf start",
-    "prestart": "npm install",
-    "pretest": "npm install"
+    "start": "nf start"
   }
 }
