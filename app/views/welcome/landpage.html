@@ -1,0 +1,72 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='centered col-xs-5 col-sm-6 col-md-6 col-lg-6 term'>
+      <div><h1>BE SOCIAL</h1></div>
+      <div><h1>BE PODUCTIVE</h1></div>
+    </div>
+
+    <div class='centered col-xs-offset-1 col-xs-6 col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-2 col-lg-3'>
+      <div class='container-fluid sign-form-container'>
+        <ul class='row nav nav-pills'>
+          <li><a data-toggle='tab' data-target='#sign_in'>SIGN IN</a></li>
+          <li class='active'><a data-toggle='tab' data-target='#sign_up'>SIGN UP</a></li>
+        </ul>
+
+        <div class='tab-content'>
+          <div id='sign_in' class='tab-pane fade'>
+            <form>
+              <div class='form-group'>
+                <input type='email' class='form-control' id='email' placeholder='Email'>
+              </div>
+              <div class='form-group'>
+                <input type='password' class='form-control' id='password' placeholder='Password'>
+              </div>
+              <button type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12'>Sign In</button>
+            </form>
+          </div>
+
+          <div id='sign_up' class='tab-pane fade in active'>
+            <form>
+              <div class='form-group'>
+                <input type='text' class='form-control' id='first_name' placeholder='First Name'>
+              </div>
+              <div class='form-group'>
+                <input type='email' class='form-control' id='surname' placeholder='Surname'>
+              </div>
+              <div class='form-group'>
+                <input type='email' class='form-control' id='email' placeholder='Email'>
+              </div>
+              <div class='form-group'>
+                <input type='password' class='form-control' id='password' placeholder='Password'>
+              </div>
+              <div class='form-group'>
+                <input type='password' class='form-control' id='confirm_password' placeholder='Confirm Password'>
+              </div>
+              <div class='form-group'>
+                <div class='input-group date' id='datepicker'>
+                  <input type='text' class='form-control' placeholder='Birthday'/>
+                  <span class='input-group-addon'>
+                    <span class='glyphicon glyphicon-calendar'></span>
+                  </span>
+                </div>
+              </div>
+              <div class='form-group'>
+                <div class='btn-group' data-toggle='buttons'>
+                  <label class='btn btn-default'>
+                    <input type='radio' name='gender' value='male'/> Male
+                  </label>
+                  <label class='btn btn-default'>
+                    <input type='radio' name='gender' value='female'/> Female
+                  </label>
+                </div>
+              </div>
+
+              <button type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12'>Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div app-view-segment="2"></div>

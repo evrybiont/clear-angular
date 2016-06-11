@@ -1,7 +1,6 @@
 body {
   background-image: url('flag.jpg');
   background-color: black;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   min-width: 500px;
@@ -13,6 +12,7 @@ body {
 
 .sign-form-container .nav-pills li {
   background-color: red;
+  cursor: pointer;
   margin-left: 0;
   width: 50%;
 }
@@ -42,7 +42,7 @@ body {
   margin-bottom: 20px;
 }
 
-.navbar-default {
+.welcome .navbar-default {
   background-image: none;
   background-color: transparent;
   box-shadow: none;
@@ -50,24 +50,20 @@ body {
   color: white !important;
 }
 
-a.navbar-brand {
+.welcome a.navbar-brand {
   color: white !important;
 }
 
-.btn-space {
-  margin-right: 5px;
-}
-
-.btn-white {
+.welcome .btn-white {
   color: #ffffff;
   background-color: #ED2839;
 }
 
-.btn-white:hover,
-.btn-white:focus,
-.btn-white:active,
-.btn-white.active,
-.open .dropdown-toggle.btn-white {
+.welcome .btn-white:hover,
+.welcome .btn-white:focus,
+.welcome .btn-white:active,
+.welcome .btn-white.active,
+.welcome .open .dropdown-toggle.btn-white {
   color: #3EBBF5;
   background-color: #FFFFFF;
 }
@@ -76,10 +72,10 @@ a.navbar-brand {
   text-align: center;
 }
 
-.term {
+.welcome .term {
   color: white;
   font-family: Comic Sans MS;
 }
-.term h1 {
+.welcome .term h1 {
   font-size: 52px !important;
 }
