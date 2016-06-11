@@ -1,0 +1,85 @@
+body {
+  background-image: url('flag.jpg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-width: 500px;
+}
+
+.sign-form-container {
+  background-color: white;
+}
+
+.sign-form-container .nav-pills li {
+  background-color: red;
+  margin-left: 0;
+  width: 50%;
+}
+
+.sign-form-container .nav-pills > li > a {
+  border-radius: 0;
+  color: white;
+  outline: 0;
+}
+
+.sign-form-container .nav-pills li.active > a,
+.sign-form-container .nav-pills li.active > a:hover {
+  background-color: white !important;
+  color: green !important;
+}
+
+.sign-form-container .nav-pills li > a:hover {
+  background-color: red !important;
+  color: white !important;
+}
+
+.sign-form-container .tab-content {
+  margin-top: 20px;
+}
+
+.sign-form-container .tab-content button {
+  margin-bottom: 20px;
+}
+
+.navbar-default {
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border-color: transparent;
+  color: white !important;
+}
+
+a.navbar-brand {
+  color: white !important;
+}
+
+.btn-space {
+  margin-right: 5px;
+}
+
+.btn-white {
+  color: #ffffff;
+  background-color: #ED2839;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  color: #3EBBF5;
+  background-color: #FFFFFF;
+}
+
+.centered {
+  text-align: center;
+}
+
+.term {
+  color: white;
+  font-family: Comic Sans MS;
+}
+.term h1 {
+  font-size: 52px !important;
+}

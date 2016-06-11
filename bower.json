@@ -6,7 +6,8 @@
     "angular-route":    "^1.5.6",
     "angular-sanitize": "^1.5.6",
     "angular-resource": "^1.5.6 ",
-    "jquery":           ">1.8.3"
+    "jquery":           ">1.8.3",
+    "bootstrap":        "^3.3.6"
   },
   "analytics": false
 }
