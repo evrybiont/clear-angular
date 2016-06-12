@@ -3,7 +3,6 @@ body {
   background-color: black;
   background-attachment: fixed;
   background-position: center;
-  min-width: 500px;
 }
 
 .sign-form-container {
@@ -74,4 +73,8 @@ body {
 }
 .welcome .term h1 {
   font-size: 52px !important;
+}
+
+.welcome .birthday {
+  margin-bottom: 5px;
 }

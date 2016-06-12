@@ -80,7 +80,7 @@ app.config(function ($jqueryValidateProvider) {
              if (!($("#" + error.element.id).attr("data-original-title") == error.message)) {
                /*$("#" + error.element.id).tooltip("destroy");*/
                  $("#" + error.element.id).tooltip({
-                     placement: "top",
+                     placement: "left",
                      template: '<div class="tooltip tooltip-error" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
                  }).attr("data-original-title", error.message);
                  $("#" + error.element.id).tooltip("show");
@@ -89,14 +89,14 @@ app.config(function ($jqueryValidateProvider) {
          else if (error.element.type == 'radio') {
            $("#" + error.element.id).closest('.btn-group').tooltip({
              trigger: "focus",
-             placement: "right",
+             placement: "left",
              template: '<div class="tooltip tooltip-error" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
            }).attr("data-original-title", error.message);
          }
          else {
              $("#" + error.element.id).tooltip({
                  trigger: "focus",
-                 placement: "top",
+                 placement: "left",
                  template: '<div class="tooltip tooltip-error" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
              }).attr("data-original-title", error.message);
          }
