@@ -1,0 +1,5 @@
+.left {text-align: left;}
+.centered {text-align: center;}
+.right {text-align: right;}
+
+.s-error:focus {border-color: #FA787E !important;}

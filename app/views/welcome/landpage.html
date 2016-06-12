@@ -14,49 +14,61 @@
 
         <div class='tab-content'>
           <div id='sign_in' class='tab-pane fade'>
-            <form>
+            <form name='userSignInForm' id='userSignInForm' ng-submit='userSignInForm.$valid && signInUser(user)' formvalidator formvalidatorconfig='signinformvalidate' formvalidatorapi='signinformvalidateapi'>
               <div class='form-group'>
-                <input type='email' class='form-control' id='email' placeholder='Email'>
+                <input type='email' class='form-control' id='signin_user_email' name='signin_user_email' ng-model='user.email' placeholder='Email' required='required'>
               </div>
               <div class='form-group'>
-                <input type='password' class='form-control' id='password' placeholder='Password'>
+                <input type='password' class='form-control' id='signin_user_password' name='signin_user_password' ng-model='user.password' placeholder='Password' required='required'>
               </div>
               <button type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12'>Sign In</button>
             </form>
           </div>
 
           <div id='sign_up' class='tab-pane fade in active'>
-            <form>
+            <form name='signupForm' id='signupForm' ng-submit='signupForm.$valid && createUser(user)' formvalidator formvalidatorconfig='signupformvalidate' formvalidatorapi='signupformvalidateapi'>
               <div class='form-group'>
-                <input type='text' class='form-control' id='first_name' placeholder='First Name'>
+                <input type='text' class='form-control' id='user_first_name' name='user_first_name' ng-model='user.first_name' placeholder='First Name' autocomplete='off' required='required'>
               </div>
               <div class='form-group'>
-                <input type='email' class='form-control' id='surname' placeholder='Surname'>
+                <input type='text' class='form-control' id='user_surname' name='user_surname' ng-model='user.surname' placeholder='Surname' autocomplete='off' required='required'>
               </div>
               <div class='form-group'>
-                <input type='email' class='form-control' id='email' placeholder='Email'>
+                <input type='email' class='form-control' id='user_email' name='user_email' ng-model='user.email' placeholder='Email' autocomplete='off' required='required'>
               </div>
               <div class='form-group'>
-                <input type='password' class='form-control' id='password' placeholder='Password'>
+                <input type='password' class='form-control' id='user_password' name='user_password' ng-model='user.password' placeholder='Password' required='required'>
               </div>
               <div class='form-group'>
-                <input type='password' class='form-control' id='confirm_password' placeholder='Confirm Password'>
+                <input type='password' class='form-control' id='user_confirm_password' name='user_confirm_password' ng-model='user.confirm_password' placeholder='Confirm Password' required='required'>
               </div>
-              <div class='form-group'>
-                <div class='input-group date' id='datepicker'>
-                  <input type='text' class='form-control' placeholder='Birthday'/>
-                  <span class='input-group-addon'>
-                    <span class='glyphicon glyphicon-calendar'></span>
-                  </span>
+              <div class='form-group left'>
+                <label>Birthday</label>
+                <div class='row'>
+                  <div class='col-lg-4'>
+                    <select class='form-control' id='user_month' name='user_month' data-ng-model='user.month' ng-options='month.name for month in months track by month.id' required='required'>
+                      <option value="">Month</option>
+                    </select>
+                  </div>
+                  <div class='col-lg-4'>
+                    <select class='form-control' id='user_day' name='user_day' data-ng-model='user.day' ng-options='day for day in days track by day' required='required'>
+                      <option value="">Day</option>
+                    </select>
+                  </div>
+                  <div class='col-lg-4'>
+                    <select class='form-control' id='user_year' name='user_year' data-ng-model='user.year' ng-options='year for year in years track by year' required='required'>
+                      <option value="">Year</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <div class='form-group'>
                 <div class='btn-group' data-toggle='buttons'>
                   <label class='btn btn-default'>
-                    <input type='radio' name='gender' value='male'/> Male
+                    <input type='radio' name='user_gender' id='user_gender' ng-model='user.gender' value='male'/> Male
                   </label>
                   <label class='btn btn-default'>
-                    <input type='radio' name='gender' value='female'/> Female
+                    <input type='radio' name='user_gender' id='user_gender' ng-model='user.gender' value='female'/> Female
                   </label>
                 </div>
               </div>
